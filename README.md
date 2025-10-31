@@ -18,7 +18,7 @@ It allows users to fill out their personal details, upload resumes, and select p
 ![screenshot](preview1.png)
 
 ## 🔗 Live Demo
-[View Live Site](https://benedictsamuel163-blip.github.io/job-application-form/)
+[View Live Site](https://benedictsamuel163-blip.github.io/job-application-form/index.html)
 
 ## 👨‍💻 Author
 **Ben (Scholar Junior)**  
