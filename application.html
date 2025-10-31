@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="application.css">
+    <title>Job-application Form</title>
+  </head>
+  <body id="top">
+    <div class="container">
+      <header>
+        <h1>TechNova Careers</h1>
+        <blockquote>Helping You Find That Dream Job!</blockquote>
+      </header>
+      <main>
+        <form>
+          <label for="name">Name: 
+            <input type="text" id="name" name="name" required class="form" placeholder="Enter your name...">
+          </label>
+          <label for="email">Email: 
+            <input type="email" id="email" name="email" required class="form" placeholder="Example@gmail.com">
+          </label>
+          <label for="number">Phone Number: 
+            <input type="number" id="number" name="number" class="form" required pattern="[0-9]{8,}" placeholder="Enter your phone number">
+          </label>
+          <fieldset>
+            <legend>Required</legend>
+            <label for="position">Position: 
+              <select id="position" name="position">
+                <option selected disabled value="select-one">Select One</option>
+                <option value="programmer">Programmer</option>
+                <option value="designer">Web designer</option>
+                <option value="frontend-developer">Frontend developer</option>
+                <option value="backend-developer">Backend developer</option>
+                <option value="marketing">Marketing</option>
+              </select>
+            </label>
+            <label for="portfolio">Portfolio-Website(optional): 
+              <input type="url" id="portfolio" name="portfolio" placeholder="Paste your porfolio url here...">
+            </label>
+            <label for="work-experience">Years of experience: 
+              <input type="number" id="work-experience" name="work-experience" min="3" max="30" placeholder="Years of work experience">
+            </label>
+            <label for="resume">Upload Resume: 
+              <input type="file" id="resume" name="resume">
+            </label>
+            <label for="letter">Cover Letter: 
+              <textarea id="letter" name="letter" value="letter" cols="40" rows="5" placeholder="Insert text here..."></textarea>
+            </label>
+            <label for="interview">Preferred Interview Date: 
+              <input type="date" id="interview" name="interview" value="date">
+            </label>
+            <label for="confirmation">
+              <input type="checkbox" id="confirmation" name="checkbox" required> I confirm that all details are correct.
+            </label>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </main>
+      <footer>
+        <p>© 2025 TechNova</p>
+        <p><a href="#top">Back to top</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

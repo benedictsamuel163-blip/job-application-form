@@ -1,0 +1,135 @@
+body {
+  background: linear-gradient(45deg, #4fafef, #3fdfef, #0f3fef);
+  color: #efe9e0;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 5em 0 10rem;
+  font-family: arial, Sans-Serif;
+  max-width: 600px;
+}
+
+.container {
+  background-color: #5f9fef;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px black;
+  margin: 0 auto;
+  width: 90%;
+  padding: 1em 0;
+  max-width: 400px;
+}
+
+header {
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.9em;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1em;
+  opacity: 0.8;
+}
+
+input, textarea, label {
+  display: block;
+}
+
+label {
+  padding: 0.3rem 1rem;
+  margin: 1em 0;
+  font-weight: bold;
+  font-style: 16px;
+  color: #4f3fae;
+}
+
+input {
+  width: 100%;
+  padding: 0.3em;
+  border-radius: 5px;
+  border: none;
+}
+
+input::placeholder {
+  padding: 0.6em;
+  font-weight: bold;
+  color: #9f9f9f;
+  font-size: 1rem;
+}
+
+:is(input, textarea):hover {
+  outline: 2px solid #3f9f9f;
+  border: none;
+}
+
+:is(input[type="text"], input[type="email"], input[type="number"], input[type="url"], input[type="date"], textarea):focus {
+  outline: 3px solid #1f8fdf;
+  border: none;
+}
+
+.form:valid {
+  border: 2px solid #3f9f4f;
+  outline: none;
+}
+
+fieldset {
+  margin: 0.3rem;
+  border: 1px solid black;
+}
+
+legend {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.2rem;
+  padding: 0.5em;
+}
+
+textarea {
+  resize: vertical;
+  box-sizing: box-border;
+  width: 100%;
+  min-height: 100px;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  width: unset;
+  vertical-align: middle;
+}
+
+input[type="file"] {
+  background-color: #5f8fde;
+  border: 1px solid #3f5fbf;
+  color: #fff;
+  padding: 0.3em;
+  border-radius: 5px;
+}
+
+button {
+  padding: 5px;
+  width: 50%;
+  margin: 8px 6.5rem;
+  background-color: #4f9f1f;
+  transition: background-color 0.1s, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #3fef1f;
+  transform: scale(1.1);
+  box-shadow: 4px 4px 4px black;
+}
+
+footer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:any-link {
+  color: #3f4fef;
+}
