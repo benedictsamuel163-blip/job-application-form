@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <title>Registration</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Register</h2>
+      <main>
+        <form>
+          <label for="name">Name: 
+            <input type="text" id="name" name="name" required placeholder="Enter your name...." class="register">
+          </label>
+          <label for="email">Email: 
+            <input type="email" id="email" name="email" required placeholder="Example@fake.com" class="register">
+          </label>
+          <label for="password">Password: 
+            <input pattern="[a-z0-9]{8,}" type="password" id="password" name="password" required class="register" placeholder="Create a strong password">
+          </label>
+          <label for="age">Date of Birth: 
+            <input type="date" id="age" name="age" required class="register">
+          </label>
+          <fieldset>
+            <legend>Required</legend>
+            <label for="gender">Choose your Gender: 
+              <select id="gender" name="gender">
+                <option name="gender-selection" value="select" selected disabled>Select one</option>
+                <option name="gender-selection" value="not-say">Rather not say</option>
+                <option name="gender-selection" value="male">Male</option>
+                <option name="gender-selection" value="female">Female</option>
+              </select>
+            </label>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
